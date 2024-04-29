@@ -1,0 +1,12 @@
+/* Form styles */
+
+form{
+    height: 70vh;
+    margin-top: 10vh;
+}
+
+input{
+    margin: 10px 0;
+}
+
+/* Form styles end */

@@ -1,0 +1,152 @@
+.top{
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(39, 39, 39, 0.5)), url(../images/sara-dubler-Koei_7yYtIo-unsplash.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* accomodation style */
+
+#accomodation{
+    height: 65vh;
+    display: flex;
+}
+
+.acc-container{
+    width: 70vw;
+    max-width: 1000px;
+    border-radius: 2rem;
+    height: 50%;
+    margin: auto;
+    border: 1px solid #08A450;
+    padding: min(2vw, 200px);
+}
+
+.acc-inp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+}
+
+.date{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.inp-contain{
+    display: flex;
+    justify-content: space-between;
+}
+
+.find-acc{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #08A450;
+    color: white;
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* accomodation style end */
+
+/* room styles */
+
+#rooms{
+    height: 90vh;
+    padding: min(2vw, 200px);
+    max-height: 90vh;
+    display: none;
+}
+
+#rooms-header{
+    font-weight: 400;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+
+.room-gallery{
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 90%;
+    max-height: 80vh;
+    width: 90%;
+    border: 1px solid black;
+    padding: min(2vw, 200px);
+
+    background: linear-gradient(rgba(3, 3, 3, 0.712), rgba(39, 39, 39, 1)), url(../images/mp-fV2dM2WvKvE-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.room{
+    width: 90%;
+    border-radius: 20px;
+    height: 25%;
+    border: 1px solid black;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.acc-room-img{
+    width: 20%;
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+#room-img{
+    width: 100%;
+}
+
+.acc-room-details{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.acc-room-details-header{
+    font-weight: 400;
+}
+
+.acc-room-desc{
+    display: flex;
+    justify-content: space-between;
+}
+
+.acc-desc-val{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.acc-img{
+    width: 1.5rem;
+}
+
+.acc-text{
+    font-size: 1rem;
+}
+
+.acc-submit{
+    padding: 10px 15px;
+    background-color: #08A450;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/* room styles end */

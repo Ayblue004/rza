@@ -1,0 +1,236 @@
+/* General styles */
+
+
+/* General left and right padding is min(2vw, 100px) */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* General styles End*/
+
+/* Top styles */
+
+/* logout styles */
+.logged{
+    width: 10vw;
+}
+
+#log-out{
+    background-color: #08A450;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.logout-img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+/* logout styles end */
+
+.container{
+
+}
+
+.top{
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(39, 39, 39, 0.5)), url(../images/glen-carrie-oRavIk04N10-unsplash.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.active{
+    color: #08A450;
+}
+
+nav{
+    padding: 0 min(2vw, 100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.plan{
+    position: absolute;
+    display: none;
+    top: 100px;
+    left: 37vw;
+    background-color: rgba(0,0,0,0.7);
+    padding: 20px;
+    border-radius: 10px;
+    height: 90px;  
+}
+
+#plan-line{
+    margin: 5px;
+}
+
+.plan-link{
+    color: white;
+}
+
+.nav-sec{
+}
+
+#buttons{
+    display: none;
+}
+
+
+#logo{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+#drop-down{
+    width: 1.2rem;
+    margin-top: 10px;
+    height: 10px;
+    width: 20px;
+}
+
+.main-text{
+    position: absolute;
+    top: 50vh;
+    font-size: 50px;
+    font-weight: 400;
+    color: white;
+    padding-left: min(2vw, 100px);
+}
+
+#plan{
+    padding: 0;
+    cursor: pointer;
+}
+
+#login{
+    font-size: 1rem;
+    background-color: #08A450;
+    border: none;
+    color: white;
+    border-radius: 20px ;
+    padding: 5px 15px ;
+    cursor: pointer;
+}
+
+/* Top styles end */
+
+
+
+/* Img links styles */
+#img-links{
+    padding: min(2vw, 200px);
+    display: flex;
+    height: 50vh;
+    
+}
+.box{
+    border: 1px solid black;
+    max-height: 400px;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 10px;
+    width: 100%;
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(39, 39, 39, 0.5)), url(../images/rock-staar-e9eYnKJJqng-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box:hover{
+    max-height: 450px;
+}
+
+#box2{
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(39, 39, 39, 0.5)), url(../images/sara-dubler-Koei_7yYtIo-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#box3{
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(39, 39, 39, 0.5)), url(../images/sutirta-budiman-Jgiv1rSIpVM-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Img links styles end */
+
+
+
+/* Footer styles */
+
+footer{
+    height: 40vh;
+    background-color: black;
+    padding: min(2vw, 200px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-link{
+    display: block;
+    color: white;
+    padding: 10px 0;
+}
+
+#copyright{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+
+/* Footer styles end */
+
+/* Cookie styles */
+
+#cookie{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+}
+
+#cookie-btn{
+    font-size: 1rem;
+    background-color: #08A450;
+    border: none;
+    color: white;
+    border-radius: 20px ;
+    padding: 5px 15px ;
+    cursor: pointer;   
+    margin-top: 10px;
+}
+
+.cookie-text{
+    color: white;
+}
+
+/* Cookie styles end */

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/team.css">
+    <link rel="stylesheet" href="./styles/support.css">
+    <!-- styles -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <nav>
+                <div class="nav-sec">
+                    <img src="./images/logo.png" alt="" id="logo" onclick="routeHomePage()">
+                </div>
+                <div class="nav-sec" id="links">
+                    <a href="team.html">Team</a>
+                    <a href="support.html">Support</a>
+                    <a href="about.html">About us</a>
+                    <span id="plan" onclick="togglePlan()">Plan Visit <img src="./images/down-2-svgrepo-com.svg" alt="drop-down" id="drop-down"></span>
+                    <a href="contact.html" class="active">Contact Us</a>
+                </div>
+                <div class="nav-sec not-logged" id="buttons">
+                    <a href="register.html">Sign up</a>
+                    <button id="login" onclick="routeLoginPage()">Login</button>
+                </div>
+                <div class="nav-sec logged" id="buttons">
+                    <div id="log-out">
+                        <img src="./images/person-svgrepo-com.svg" alt="logout" class="logout-img" onclick="routeDashboard()">
+                        <img src="./images/log-out-04-svgrepo-com.svg" alt="logout" class="logout-img" onclick="logOut()" id="log-out-btn">
+                    </div>
+                </div>
+            </nav>
+
+            <div class="plan">
+                <a href="ticket.html" class="plan-link">Book ticket</a>
+                <hr id="plan-line">
+                <a href="room.html" class="plan-link">Book accomodation</a>
+            </div>
+
+            <div class="main">
+                <h1 class="main-text">
+                    Need help or have any questions?<br> Call us on <br>
+                    <span id="sub-main-text">+44123456789</span><br>
+                    <span id="sub-main-text">+44987654321</span>
+                </h1>
+            </div>
+
+        </div>
+
+    
+
+        <footer>
+            <div class="footer-logo">
+                <img src="./images/logo.png" alt="logo" id="footer-logo">
+            </div>
+            <div>
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="ticket.html" class="footer-link">Book ticket</a>
+                <a href="About.html" class="footer-link">About us</a>
+                <a href="room.html" class="footer-link">Reserve accomodation</a>
+                <a href="support.html" class="footer-link">Support</a>
+                <a href="register.html" class="footer-link">Register with us</a>
+            </div>
+        </footer>
+        <p id="copyright">©RZA 2024</p>
+    </div>
+    <div id="cookie">
+        <p class="cookie-text">By continuing to use this site you agree to the use of functional cookies to ensure that you have the best experience </p>
+        <button id="cookie-btn" onclick="confirmCookies()" type="button">Ok</button>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

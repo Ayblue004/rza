@@ -1,0 +1,39 @@
+.top{
+    background: linear-gradient(rgba(22, 22, 22, 0.938), rgba(39, 39, 39, 0.5)), url(../images/sutirta-budiman-Jgiv1rSIpVM-unsplash.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* flier styles */
+
+.flier-contain{
+    position: absolute;
+    top: 12vh;
+    right: 12vw;
+}
+
+#flier{
+    width: 150px;
+}
+
+#download{
+    color: white;
+    position: absolute;
+    padding: 25px;
+    font-size: 1.2rem;
+    top: 70vh;
+    border-radius: 20px;
+    border: none;
+    margin-left: min(2vw, 200px);
+    background-color: #08A450;
+    cursor: pointer;
+}
+
+#download-icon{
+    width: 20px;
+    margin-left: 10px;
+}
+
+/* flier styles end */

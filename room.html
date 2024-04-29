@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/team.css">
+    <link rel="stylesheet" href="./styles/room.css">
+    <!-- styles -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- fonts -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <nav>
+                <div class="nav-sec">
+                    <img src="./images/logo.png" alt="" id="logo" onclick="routeHomePage()">
+                </div>
+                <div class="nav-sec" id="links">
+                    <a href="team.html">Team</a>
+                    <a href="support.html">Support</a>
+                    <a href="about.html">About us</a>
+                    <span id="plan" onclick="togglePlan()" class="active">Plan Visit <img src="./images/down-2-svgrepo-com.svg" alt="drop-down" id="drop-down"></span>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="nav-sec not-logged" id="buttons">
+                    <a href="register.html">Sign up</a>
+                    <button id="login" onclick="routeLoginPage()">Login</button>
+                </div>
+                <div class="nav-sec logged" id="buttons">
+                    <div id="log-out">
+                        <img src="./images/person-svgrepo-com.svg" alt="logout" class="logout-img" onclick="routeDashboard()">
+                        <img src="./images/log-out-04-svgrepo-com.svg" alt="logout" class="logout-img" onclick="logOut()" id="log-out-btn">
+                    </div>
+                </div>
+            </nav>
+
+            <div class="plan">
+                <a href="ticket.html" class="plan-link">Book ticket</a>
+                <hr id="plan-line">
+                <a href="room.html" class="plan-link">Book accomodation</a>
+            </div>
+            
+            <h1 class="main-text">
+                Don't want to leave so soon?! <br>
+                <span id="sub-main-text">Spend a night or nights! with us, we got you covered</span>
+            </h1>
+        </div>
+
+        <section id="accomodation">
+            <div class="acc-container">
+                <div class="acc-inp">
+                    <div class="inp-contain">
+                        <label for="check-in">Check in Date</label>
+                        <input type="date" id="check-in-date" name="check-in" class="date">
+                    </div>
+                    <div class="inp-contain">
+                        <label for="check-in">Check out Date</label>
+                        <input type="date" id="check-out-date" name="check-out" class="date">
+                    </div>
+                </div>
+                <button class="find-acc" id="find-rooms" onclick="viewRooms()">Find accomodation</button>
+            </div>
+        </section>
+
+        <section id="rooms">
+            <h1 id="rooms-header">Available Rooms</h1>
+            <div class="room-gallery">
+                <div class="room" id="room1">
+                    <div class="acc-room-img">
+                        <img src="./images/hotel-room.jpg" alt="room" id="room-img">
+                    </div>
+                    <div class="acc-room-details">
+                        <h2 class="acc-room-details-header">
+                            Room 1
+                        </h2>
+                        <div class="acc-room-desc">
+                            <div class="acc-desc-val" id="acc-price">
+                                <img src="./images/pound-sign-svgrepo-com.svg" alt="price" class="acc-img">
+                                <span class="acc-text">
+                                    £79 per night
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-capacity">
+                                <img src="./images/people-svgrepo-com.svg" alt="capacity" class="acc-img">
+                                <span class="acc-text">
+                                    3
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-beds">
+                                <img src="./images/bed-svgrepo-com.svg" alt="beds" class="acc-img">
+                                <span class="acc-text">
+                                    2
+                                </span>
+                            </div>
+                            <button class="acc-submit" onclick="bookRoom('1','79','3','Comfortable hotel room')">
+                                Book Room
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="room" id="room2">
+                    <div class="acc-room-img">
+                        <img src="./images/hotel-room.jpg" alt="room" id="room-img">
+                    </div>
+                    <div class="acc-room-details">
+                        <h2 class="acc-room-details-header">
+                            Room 2
+                        </h2>
+                        <div class="acc-room-desc">
+                            <div class="acc-desc-val" id="acc-price">
+                                <img src="./images/pound-sign-svgrepo-com.svg" alt="price" class="acc-img">
+                                <span class="acc-text">
+                                    £79 per night
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-capacity">
+                                <img src="./images/people-svgrepo-com.svg" alt="capacity" class="acc-img">
+                                <span class="acc-text">
+                                    3
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-beds">
+                                <img src="./images/bed-svgrepo-com.svg" alt="beds" class="acc-img">
+                                <span class="acc-text">
+                                    2
+                                </span>
+                            </div>
+                            <button class="acc-submit" onclick="bookRoom('2','79','3','Comfortable hotel room')">
+                                Book Room
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="room" id="room3">
+                    <div class="acc-room-img">
+                        <img src="./images/hotel-room.jpg" alt="room" id="room-img">
+                    </div>
+                    <div class="acc-room-details">
+                        <h2 class="acc-room-details-header">
+                            Room 3
+                        </h2>
+                        <div class="acc-room-desc">
+                            <div class="acc-desc-val" id="acc-price">
+                                <img src="./images/pound-sign-svgrepo-com.svg" alt="price" class="acc-img">
+                                <span class="acc-text">
+                                    £79 per night
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-capacity">
+                                <img src="./images/people-svgrepo-com.svg" alt="capacity" class="acc-img">
+                                <span class="acc-text">
+                                    3
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-beds">
+                                <img src="./images/bed-svgrepo-com.svg" alt="beds" class="acc-img">
+                                <span class="acc-text">
+                                    2
+                                </span>
+                            </div>
+                            <button class="acc-submit" onclick="bookRoom('3','79','3','Comfortable hotel room')">
+                                Book Room
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="room" id="room4">
+                    <div class="acc-room-img">
+                        <img src="./images/hotel-room.jpg" alt="room" id="room-img">
+                    </div>
+                    <div class="acc-room-details">
+                        <h2 class="acc-room-details-header">
+                            Room 4
+                        </h2>
+                        <div class="acc-room-desc">
+                            <div class="acc-desc-val" id="acc-price">
+                                <img src="./images/pound-sign-svgrepo-com.svg" alt="price" class="acc-img">
+                                <span class="acc-text">
+                                    £79 per night
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-capacity">
+                                <img src="./images/people-svgrepo-com.svg" alt="capacity" class="acc-img">
+                                <span class="acc-text">
+                                    3
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-beds">
+                                <img src="./images/bed-svgrepo-com.svg" alt="beds" class="acc-img">
+                                <span class="acc-text">
+                                    2
+                                </span>
+                            </div>
+                            <button class="acc-submit" onclick="bookRoom('4','79','3','Comfortable hotel room')">
+                                Book Room
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="room" id="room5">
+                    <div class="acc-room-img">
+                        <img src="./images/hotel-room.jpg" alt="room" id="room-img">
+                    </div>
+                    <div class="acc-room-details">
+                        <h2 class="acc-room-details-header">
+                            Room 5
+                        </h2>
+                        <div class="acc-room-desc">
+                            <div class="acc-desc-val" id="acc-price">
+                                <img src="./images/pound-sign-svgrepo-com.svg" alt="price" class="acc-img">
+                                <span class="acc-text">
+                                    £79 per night
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-capacity">
+                                <img src="./images/people-svgrepo-com.svg" alt="capacity" class="acc-img">
+                                <span class="acc-text">
+                                    3
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-beds">
+                                <img src="./images/bed-svgrepo-com.svg" alt="beds" class="acc-img">
+                                <span class="acc-text">
+                                    2
+                                </span>
+                            </div>
+                            <button class="acc-submit" onclick="bookRoom('5','79','3','Comfortable hotel room')">
+                                Book Room
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="room" id="room6">
+                    <div class="acc-room-img">
+                        <img src="./images/hotel-room.jpg" alt="room" id="room-img">
+                    </div>
+                    <div class="acc-room-details">
+                        <h2 class="acc-room-details-header">
+                            Room 7
+                        </h2>
+                        <div class="acc-room-desc">
+                            <div class="acc-desc-val" id="acc-price">
+                                <img src="./images/pound-sign-svgrepo-com.svg" alt="price" class="acc-img">
+                                <span class="acc-text">
+                                    £79 per night
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-capacity">
+                                <img src="./images/people-svgrepo-com.svg" alt="capacity" class="acc-img">
+                                <span class="acc-text">
+                                    3
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-beds">
+                                <img src="./images/bed-svgrepo-com.svg" alt="beds" class="acc-img">
+                                <span class="acc-text">
+                                    2
+                                </span>
+                            </div>
+                            <button class="acc-submit" onclick="bookRoom('6','79','3','Comfortable hotel room')">
+                                Book Room
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="room" id="room7">
+                    <div class="acc-room-img">
+                        <img src="./images/hotel-room.jpg" alt="room" id="room-img">
+                    </div>
+                    <div class="acc-room-details">
+                        <h2 class="acc-room-details-header">
+                            Room 8
+                        </h2>
+                        <div class="acc-room-desc">
+                            <div class="acc-desc-val" id="acc-price">
+                                <img src="./images/pound-sign-svgrepo-com.svg" alt="price" class="acc-img">
+                                <span class="acc-text">
+                                    £79 per night
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-capacity">
+                                <img src="./images/people-svgrepo-com.svg" alt="capacity" class="acc-img">
+                                <span class="acc-text">
+                                    3
+                                </span>
+                            </div>
+                            <div class="acc-desc-val" id="acc-beds">
+                                <img src="./images/bed-svgrepo-com.svg" alt="beds" class="acc-img">
+                                <span class="acc-text">
+                                    2
+                                </span>
+                            </div>
+                            <button class="acc-submit" onclick="bookRoom('7','79','3','Comfortable hotel room')">
+                                Book Room
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-logo">
+                <img src="./images/logo.png" alt="logo" id="footer-logo">
+            </div>
+            <div>
+                <a href="index.html" class="footer-link">Home</a>
+                <a href="ticket.html" class="footer-link">Book ticket</a>
+                <a href="About.html" class="footer-link">About us</a>
+                <a href="room.html" class="footer-link">Reserve accomodation</a>
+                <a href="support.html" class="footer-link">Support</a>
+                <a href="register.html" class="footer-link">Register with us</a>
+            </div>
+        </footer>
+        <p id="copyright">©RZA 2024</p>
+    </div>
+    <div id="cookie">
+        <p class="cookie-text">By continuing to use this site you agree to the use of functional cookies to ensure that you have the best experience </p>
+        <button id="cookie-btn" onclick="confirmCookies()" type="button">Ok</button>
+    </div>
+    <script>
+        //This is used to toggle the view of the available rooms
+        function viewRooms(){
+            if(document.getElementById("check-in-date").value.length == 0 || document.getElementById("check-out-date").value.length == 0){
+                alert("Enter valid date")
+            }else{
+                //Check for booked rooms and hide them
+                new Promise((resolve, reject)=>{
+                fetch(`${basePath}booked/rooms`)
+                .then(response=> response.json())
+                .then(json =>{
+                    let bookedRooms = json.rooms;
+                    for (let index = 0; index < bookedRooms.length; index++) {
+                        document.getElementById(`room${bookedRooms[index].roomID}`).style.display = 'none';
+                    }
+                })
+                .catch(error => reject(error))
+            });
+            
+            roomContainer.style.display = "block"
+            accomodationConatiner.style.display = "none"
+            }
+        }
+        //Used to get the date of that day
+        function getDate()
+            {
+                let  today 		= new Date();
+                let  dd 		= String(today.getDate()).padStart(2, '0');
+                let  mm 		= String(today.getMonth() + 1).padStart(2, '0'); //janvier = 0
+                let  yyyy 		= today.getFullYear();
+            
+                return `${yyyy}-${mm}-${dd}`; 
+                //return dd + '/' + mm + '/' + yyyy; // change form if you need
+            }
+
+        console.log(document.getElementById("check-in-date").value.length)
+
+        //This is the function that would be used by a user to book a room
+        function bookRoom(roomNum, price, people, description){
+            if(!sessionStorage.getItem("user")){
+            alert("Please Login or create account to book accomodation")
+            }else{
+                //Get user details
+                const userData = JSON.parse(sessionStorage.getItem("user"));
+
+                const stayDuration = document.getElementById("check-in-date").value + '-' + document.getElementById("check-out-date").value;
+
+
+                const data = {
+                    roomID: roomNum,
+                    occupantID: userData.details.id,
+                    price: price,
+                    status: 'occupied',
+                    noOfPeople: people,
+                    description: description,
+                    currentStayDurration: stayDuration,
+                    dateBooked: getDate(),
+                }
+
+                fetch(`${basePath}room`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(data)
+                }).then(resp =>{
+                    alert("Room booked! Check dashboard for details")
+                    console.log(resp);
+                })
+            }
+        }
+    </script>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* top styles */
+
+.top{
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(39, 39, 39, 0.5)), url(../images/hu-chen-60XLoOgwkfA-unsplash.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* top styles end */
+
+
+/* logout styles */
+#log-out{
+    background-color: #08A450;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.logout-img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+/* logout styles end */
+
+/* dashboard styles */
+
+
+#greeting{
+    margin-left: 4.5vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+#username{
+    color: white;
+}
+
+.dashboard{
+    height: 80vh;
+    width: 90vw;
+    margin: auto;
+    border-radius: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: min(3vw, 200px);
+    display: flex;
+    justify-content: space-between;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.section-head{
+    color: white;
+    font-weight: 400;
+}
+
+.evi{
+    width: 25vw;
+    height: 15vh;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.evi-details-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.evi-detail{
+    display: flex;
+    align-items: center;
+}
+
+.evi-img{
+    width: 50px;
+}
+
+.evi-text{
+
+}
+
+.evi-button{
+    background-color: #08A450;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    max-width: 150px;
+    cursor: pointer;
+}
+
+/* dashboard styles end */

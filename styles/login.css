@@ -1,0 +1,65 @@
+/* .top styles */
+
+.top{
+    background: linear-gradient(rgba(22, 22, 22, 0.5), rgba(39, 39, 39, 0.5)), url(../images/damian-patkowski-T-LfvX-7IVg-unsplash.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form{
+    margin: 0 auto;
+    border: 1px solid black;
+    margin-top: 30vh;
+    width: 50vw;
+    max-width: 450px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: min(3vw, 250px);
+    background-color: rgba(217, 217, 217, 0.5);
+    border: none;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 80%;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    height: min(45px, 15%);
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+button{
+    width: 150px;
+    margin: auto ;
+    font-size: 1rem;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: #08A450;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#forgot{
+    margin-top: 5px;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+/* top styles end */

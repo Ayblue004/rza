@@ -1,0 +1,53 @@
+/* Top styles */
+
+#sub-main-text{
+    color: white;
+    font-weight: 350;
+    font-size: 1.5rem;
+}
+
+/* Top styles end */
+
+#team-details{
+    padding: min(2vw, 200px);
+    min-height: 100vh;
+}
+
+.tm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-contain{
+    width: 40%;
+}
+
+.guide-img{
+    width: 100%;
+    max-width: 300px;
+    /* height: 50px; */
+}
+
+#img-contain2{
+    text-align: right;
+}
+
+
+.tm-description{
+    width: 40vw;
+}
+
+.tm-name{
+    font-size: 1.5rem;
+    font-weight: 450;
+}
+
+.tm-p{
+    width: 100%;
+    font-size: 14px;
+}
+
+
+
+/* Team details style end */
